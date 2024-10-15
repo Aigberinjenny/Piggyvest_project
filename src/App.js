@@ -24,16 +24,28 @@
 
 // export default App;
 
-
+//import React from "react"
 import { RouterProvider } from "react-router-dom"
 import { MainRoute } from "./Router/MainRoute"
 
 const App = () => {
   return (
     <div>
-      <RouterProvider router={MainRoute} />
+      <RouterProvider Router={MainRoute} />
     </div>
   )
 }
 
 export default App
+
+// import React from 'react'
+
+// const App = () => {
+//   return (
+//     <div>
+//       App
+//     </div>
+//   )
+// }
+
+// export default App

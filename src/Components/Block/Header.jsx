@@ -1,60 +1,56 @@
 import React from "react"
 import styled from "styled-components"
-import logo from "../../Assets/Piggyvest-images/logo.svg"
+import image from "../../Assets/The Better Way To Save _ Invest Online - PiggyVest/logo.svg"
+//import { useMediaQuery } from 'react-responsive'
 
 const Header = () => {
     return (
         <Container>
             <Main>
-                <Image src={logo} />
-                <Nav>
-                    <SubNavs>Save</SubNavs>
-                    <SubNavs>Invest</SubNavs>
-                    <SubNavs>Stories</SubNavs>
-                    <SubNavs>FAQs</SubNavs>
-                    <SubNavs>Resources</SubNavs>
-                </Nav>
-                <div>
-                    <button className="Sign">Sign in</button>
-                    <button>Create free account</button>
-                </div>
+                <Image src={image} />
 
-
+                <Navs>
+                    <Nav>Save</Nav>
+                    <Nav>Invest</Nav>
+                    <Nav>Stories</Nav>
+                    <Nav>FAQs</Nav>
+                    <Nav>Resources</Nav>
+                </Navs>
+                <Sign>Sign in</Sign>
+                <Button>Create free account</Button>
             </Main>
+
+
         </Container>
     )
 }
 
 export default Header
 
-
-const Image = styled.img`
-   width: 20px;
-   margin-left: 15px;
-`
-
-
-const Button = styled.div`
-    padding: 12px 22px;
-    background-color: #122231;
-    color: black;
-    border-radius: 30px;
+const Sign = styled.div`
+    background-color: white;
+    padding: 16.5px 16px;
+    //margin: 30px;
+    color: #37424C;
+    border-radius: 12px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+
+`
+
+
+const Image = styled.div`
+    font-size: 24px;
+    width: 20%;
+    font-weight: 800;
+    //margin-right: 50px;
+    margin-left: 40px;
 
     
+ 
 `
 
-const Sign = styled.div`
-    padding: 12px 22px;
-    background-color: white;
-    color: black;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-`
 
 const Nav = styled.div`
     font-size: 15px;
@@ -62,37 +58,66 @@ const Nav = styled.div`
     cursor: pointer;
 `
 
-const Navs = styled.div`
-    width: 37%;
-    /* background-color: blue; */
+
+const Container = styled.div`
+    width: 100%;
     height: 100%;
+    margin-top:30px;
+    position: fixed;
+    background-color: #E4E8E9;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+
+`
+const Navs = styled.div`
+   //margin-left: 0px;
+    margin-right:80px;
+    width: 50%;
+    height: 100% ;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
+
 `
-const Logo = styled.div`
-font-size: 24px;
-font-weight: 800;
+
+const Button = styled.div`
+    padding: 16.5px 16px;
+    margin-right: 70px;
+    background-color: #122231;
+    color: #FFFFFF;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    //cursor: pointer;
+
 `
 
 const Main = styled.div`
-width:  90%;
-height: 100%;
-/* background-color: black; */
-display: flex;
-justify-content: space-between;
-align-items: center;
-`
-const SubNavs = styled.div`
-    color: #0D1926;
+    //margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    //background-color: #3d3fc5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 
 `
-const Container = styled.div`
-height: 85px;
-width: 100vw;
-background-color: white;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-`
+// const media = styled.div`
+//     max-width: 768px;
+//     flex-direction: column;
+// `
+// const media = styled.div`
+//     min-width: 768px;
+//     flex-direction: row;
+// `

@@ -1,60 +1,121 @@
-import React from "react"
-import styled from "styled-components"
-import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
-import { BsTwitter, BsPinterest } from "react-icons/bs"
+import React from 'react'
+import { BsInstagram, BsTiktok, BsTwitterX, BsYoutube } from 'react-icons/bs'
+import { FaFacebook } from 'react-icons/fa'
+import logo from '../../Assets/The Better Way To Save _ Invest Online - PiggyVest/piggybank-icon.png'
+import image from '../../Assets/The Better Way To Save _ Invest Online - PiggyVest/compliance-27923b9c92565dcd4d9750070c39f3a3.avif'
+import styled from 'styled-components'
+
 
 const Footer = () => {
     return (
         <Container>
-            <Logo>sunnyside</Logo>
+            <Right>
+                <Image src={logo} />
+                <Image src={image} />
 
-            <Navs>
-                <SubNavs>About</SubNavs>
-                <SubNavs>Services</SubNavs>
-                <SubNavs>Projects</SubNavs>
-            </Navs>
-
-            <Icons>
-                <FaFacebookSquare size={20} />
-                <FaInstagram size={20} />
-                <BsTwitter size={20} />
-                <BsPinterest size={20} />
-            </Icons>
+            </Right>
+            <Center>
+                <Text1>
+                    Product
+                </Text1>
+                <Text2>
+                    Piggybank
+                    Invest
+                    Safelock
+                    Target Savings
+                    Flex Naira
+                    Flex Dollar
+                </Text2>
+                <Text1>
+                    Company
+                </Text1>
+                <Text2>
+                    About
+                    FAQs
+                    Blog
+                </Text2>
+                <Text1>
+                    Legal
+                </Text1>
+                <Text2>
+                    Terms
+                    Privacy
+                    Security
+                </Text2>
+            </Center>
+            <Left>
+                <Icon>
+                    <Image src={FaFacebook} />
+                    <Image src={BsInstagram} />
+                    <Image src={BsTwitterX} />
+                    <Image src={BsTiktok} />
+                    <Image src={BsYoutube} />
+                </Icon>
+                <Address>Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos, Nigeria.</Address>
+                <Contact>contact@piggyvest.com</Contact>
+                <Number>+234 700 933 9339</Number>
+            </Left>
         </Container>
     )
 }
 
 export default Footer
 
-const Icons = styled.div`
-width: 10%;
-display: flex;
-justify-content: space-between;
+
+
+const Image = styled.img`
+
+
+
 `
 
-const SubNavs = styled.div``
+const Icon = styled.img`
 
-const Navs = styled.div`
-display: flex;
-justify-content: space-between;
-width: 30%;
-font-weight: 500;
-margin-top: 25px;
-margin-bottom: 50px;
-`
 
-const Logo = styled.div`
-font-weight: 700;
-font-size: 25px;
+
 `
 
 const Container = styled.div`
-    width: 100%;
-    height: 200px;
-    background-color: #1fe1d7;
-    color: #13736e;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+`
+
+const Text1 = styled.div`
+
+
+
+`
+
+const Text2 = styled.div`
+
+
+`
+
+const Address = styled.div`
+
+
+`
+
+const Contact = styled.div`
+
+`
+
+
+const Right = styled.div`
+
+
+`
+const Center = styled.div`
+
+
+`
+
+const Left = styled.div`
+
+
+`
+
+const Number = styled.div`
+
+
 `
